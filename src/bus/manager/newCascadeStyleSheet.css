@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 26, 2018, 10:43:29 AM
+    Author     : MARTIN
+*/
+
+* {
+   -fx-primary : #2A2E37;
+   -fx-secondary : FFFF8D;
+   -fx-primary-text : B2B2B2;
+   -fx-red : FF0000;
+   -fx-blue :#1976D2;
+}
+
+.buttons {
+    -fx-text-fill : -fx-primary-text;
+    -fx-background-color: -fx-primary;
+    -fx-border-color : -fx-secondary;
+    -fx-border-radius : 15px;
+    -fx-background-radius : 15px;
+}
+
+.buttons:hover {
+    -fx-border-color : -fx-secondary;
+    -fx-background-color : -fx-secondary;
+    -fx-text-fill : -fx-primary;
+}
