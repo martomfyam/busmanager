@@ -10,12 +10,16 @@ package bus.manager;
  * @author MARTIN
  */
 public class customerdetails  {
+
+    public String fname;
     
     
-        private   String fname,lname,origin1,dest,date1,days1,phone1,idno1, currentdate;
+        private   String lname,origin1,dest,date1,days1,phone1,idno1, currentdate;
         private double price,discfinal;
         public int ticketnumber;
     
+
+        
     public String getfname1(){
         System.out.println("class output fname is: "+fname);
         return fname;

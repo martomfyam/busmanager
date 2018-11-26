@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="491.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="passwordreset.ResetpassController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="485.0">
+         <children>
+            <Pane layoutX="17.0" layoutY="14.0" prefHeight="59.0" prefWidth="451.0" style="-fx-background-color: grey;">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+               <children>
+                  <Label layoutX="124.0" layoutY="17.0" text="RESET PASSWORD" textFill="#fcf9f9">
+                     <font>
+                        <Font name="Algerian" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="17.0" layoutY="89.0" prefHeight="328.0" prefWidth="451.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="113.0" layoutY="270.0" onMouseClicked="#submit" style="-fx-background-color: #2196f3;" text="Submit" textFill="#fcf8f8" />
+                  <JFXButton layoutX="243.0" layoutY="270.0" onMouseClicked="#cancel" style="-fx-background-color: #ea2222;" text="Cancel" textFill="#fcf9f9" />
+                  <JFXPasswordField fx:id="ceopass" layoutX="113.0" layoutY="52.0" prefHeight="29.0" prefWidth="196.0" promptText="Enter C.E.O's password " />
+                  <JFXPasswordField fx:id="newpass" layoutX="113.0" layoutY="123.0" prefHeight="29.0" prefWidth="196.0" promptText="Enter your new password" />
+                  <JFXPasswordField fx:id="newconfirm" layoutX="113.0" layoutY="184.0" prefHeight="29.0" prefWidth="196.0" promptText="Confirm your new password" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

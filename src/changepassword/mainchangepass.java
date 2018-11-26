@@ -3,34 +3,32 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package login;
+package changepassword;
 
 import database.DatabaseHandler;
 import javafx.application.Application;
+import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
  *
  * @author MARTIN
  */
-public class NewClass extends Application {
+public class mainchangepass extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("changepass.fxml"));
         
-        stage.getIcons().add(new Image("/ticket/icons/bus.jpg"));
-        stage.setTitle("LOGIN");
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.show();
        
-                DatabaseHandler.getInstance();
+             
            
     }
 
@@ -43,5 +41,7 @@ public class NewClass extends Application {
      //   DatabaseHandler d = new DatabaseHandler();
         
     }
+
+
     
 }
